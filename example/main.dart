@@ -1,4 +1,4 @@
-import '../lib/src/terminal.dart';
+import 'package:prompter_crh/src/terminal.dart';
 
 void main() {
   Terminal terminal = Terminal();
