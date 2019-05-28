@@ -19,9 +19,11 @@ class Terminal {
   }
 
   void printOptions(List<Option> options) {
-    for (var i = 0; i < options.length; i++) {
-      stdout.writeln('[$i] - ${options[i].label}');
-    }
+    var optionsMap = options.asMap();
+
+    optionsMap.forEach((key, value) {
+      stdout.writeln('[$key] - ${value.label}');
+    });
 
     stdout.writeln('Enter a choice\n');
     stdout.writeln('>');
