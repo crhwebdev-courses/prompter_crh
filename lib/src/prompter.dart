@@ -1,7 +1,7 @@
 import 'option.dart';
 import 'terminal.dart';
 
-Terminal terminal = Terminal();
+final Terminal terminal = Terminal();
 
 class Prompter {
   void ask(String prompt, List<Option> options) {
