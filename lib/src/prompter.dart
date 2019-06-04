@@ -5,6 +5,7 @@ final Terminal _terminal = const Terminal();
 
 class Prompter {
   bool askBinary(String prompt) {
+    _terminal.clearScreen();
     _terminal.printPrompt('$prompt (y/n)');
 
     final input = _terminal.collectInput();
@@ -13,6 +14,7 @@ class Prompter {
   }
 
   askMultiple(String prompt, List<Option> options) {
+    _terminal.clearScreen();
     _terminal.printPrompt(prompt);
     _terminal.printOptions(options);
 
