@@ -1,5 +1,4 @@
-import 'package:prompter_crh/src/option.dart';
-import 'package:prompter_crh/src/prompter.dart';
+import 'package:prompter_crh/prompter_crh.dart';
 
 void main() {
   var options = [
